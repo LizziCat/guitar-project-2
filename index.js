@@ -8,10 +8,10 @@ function render() {
 
 let CATALOG = [];
 
-//http://myjson.dit.upm.es/api/bins/2qe9 - удаленный сервер
+//http://myjson.dit.upm.es/api/bins/ah3l - удаленный сервер
 //server/catalog.json
 
-fetch('http://myjson.dit.upm.es/api/bins/ah3l')
+fetch('server/catalog.json')
     .then(res => res.json())
     .then(body => {
         CATALOG = body;
